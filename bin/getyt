@@ -2,7 +2,7 @@
 
 [ "$1" = "-p" ] && /bin/bash <<EOF && exit 0
 	youtube-dl "$2" -f mp4 -o vid.mp4
-	ffplay "vid.mp4"
+	ffplay -autoexit "vid.mp4"
 	rm -f "vid.mp4"
 EOF
 

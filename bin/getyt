@@ -3,7 +3,7 @@
 [ "$1" = "-p" ] && /bin/bash <<EOF && exit 0
 	youtube-dl "$2" -f mp4 -o vid.mp4
 	ffplay "vid.mp4"
-	rm "vid.mp4"
+	rm -f "vid.mp4"
 EOF
 
 [ "$1" = "-d" ] && /bin/bash <<EOF && exit 0

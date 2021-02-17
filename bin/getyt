@@ -1,0 +1,31 @@
+#!/bin/bash
+
+[ "$1" = "-p" ] && /bin/bash <<EOF && exit 0
+	youtube-dl "$2" -f mp4 -o vid.mp4
+	ffplay "vid.mp4"
+	rm "vid.mp4"
+EOF
+
+[ "$1" = "-d" ] && /bin/bash <<EOF && exit 0
+	youtube-dl "$2" -f mp4 -o vid.mp4
+EOF
+
+[ "$1" = "--help" ] && /bin/bash <<EOF && exit 0
+	echo "GetYT v1.0, download or play YouTube videos."
+	echo
+	echo "Usage:"
+	echo "getyt [FLAGS] [VIDEO URL]"
+	echo
+	echo "Flags:"
+	echo "-p	- Play a YouTube video"
+	echo "-d	- Download a YouTube video"
+	echo "--help	- this help text"
+	echo
+	echo "Examples:"
+	echo "getyt -p \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"	- play the rick roll"
+	echo "getyt -d \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"	- download the rick roll"
+EOF
+
+echo "error: no flags specified."
+echo "use --help for help."
+exit 1

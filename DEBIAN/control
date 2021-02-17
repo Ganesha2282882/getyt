@@ -1,0 +1,9 @@
+Package: getyt
+Version: 1.0
+Section: custom
+Priority: optional
+Architecture: all
+Essential: no
+Installed-Size: 16384
+Maintainer: sharmaganesha2@gmail.com
+Description: Download and play YouTube videos

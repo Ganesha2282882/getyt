@@ -22,8 +22,8 @@ EOF
 	echo "--help	- this help text"
 	echo
 	echo "Examples:"
-	echo "getyt -p \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"	- play the rick roll"
-	echo "getyt -d \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"	- download the rick roll"
+	echo "getyt -p https://www.youtube.com/watch?v=dQw4w9WgXcQ	- play the rick roll"
+	echo "getyt -d https://www.youtube.com/watch?v=dQw4w9WgXcQ	- download the rick roll"
 EOF
 
 echo "error: no flags specified."

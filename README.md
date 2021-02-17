@@ -1,7 +1,6 @@
 # GetYT
 A (frontend) to `youtube-dl`.
-
-How it works:
+## How it works:
 
 First, it grabs the video using `youtube-dl`.
 

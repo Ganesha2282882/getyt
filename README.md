@@ -1,5 +1,8 @@
 # GetYT
 A (frontend) to `youtube-dl`.
+
+![GetYT screenshot](Screenshot.png)
+
 ## How it works:
 
 First, it grabs the video using `youtube-dl`.

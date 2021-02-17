@@ -12,12 +12,12 @@ After that, it deletes the video.
 Well, if you are on Debian, then run:
 ```bash
 dpkg-deb -b .
-mv ..deb GETYT.deb
+mv -f ..deb GETYT.deb
 sudo dpkg -i GETYT.deb
 ```
 If you are not on Debian, then run:
 ```bash
-sudo cp bin/getyt /usr/local/bin
+sudo cp -f bin/getyt /usr/local/bin
 sudo chmod +x /usr/local/bin/getyt
 ```
 That's it!

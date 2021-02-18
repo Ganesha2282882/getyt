@@ -7,7 +7,7 @@
 EOF
 
 [ "$1" = "-d" ] && /bin/bash <<EOF && exit 0
-	youtube-dl "$2" -f mp4 -o vid.mp4
+	youtube-dl "$2" -f mp4 -o "Downloaded Video.mp4"
 EOF
 
 [ "$1" = "--help" ] && /bin/bash <<EOF && exit 0
@@ -26,6 +26,6 @@ EOF
 	echo "getyt -d https://www.youtube.com/watch?v=dQw4w9WgXcQ	- download the rick roll"
 EOF
 
-echo "error: no flags specified."
+echo "error: no proper flags specified."
 echo "use --help for help."
 exit 1

@@ -17,6 +17,7 @@ Well, if you are on Debian, then run:
 dpkg-deb -b .
 mv -f ..deb GETYT.deb
 sudo dpkg -i GETYT.deb
+sudo rm /.gitignore /README.md /LICENSE /Screenshot.png /usr/.gitignore /usr/README.md /usr/LICENSE /usr/Sreenshot.png
 ```
 If you are not on Debian, then run:
 ```bash

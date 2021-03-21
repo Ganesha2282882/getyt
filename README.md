@@ -22,6 +22,7 @@ sudo rm /.gitignore /README.md /LICENSE /Screenshot.png /usr/.gitignore /usr/REA
 If you are not on Debian, then run:
 ```bash
 sudo cp -f bin/getyt /usr/local/bin
-sudo chmod +x /usr/local/bin/getyt
+sudo chown root:root /usr/local/bin/getyt
+sudo chmod 755 /usr/local/bin/getyt
 ```
 That's it!
